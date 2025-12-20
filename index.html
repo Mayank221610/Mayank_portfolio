@@ -22,8 +22,8 @@
     <style>
         /* --- VISUAL SEPARATION FOR SECTIONS --- */
         #dev-section {
-            background-color: rgba(255, 255, 255, 0.03); 
-            border-top: 2px solid #ffbd39; 
+            background-color: rgba(255, 255, 255, 0.03);
+            border-top: 2px solid #ffbd39;
             padding-top: 80px;
         }
 
@@ -32,7 +32,9 @@
         }
 
         /* --- Force Projects to be Visible --- */
-        .project-wrap, .img, .text {
+        .project-wrap,
+        .img,
+        .text {
             opacity: 1 !important;
             visibility: visible !important;
             animation: none !important;
@@ -48,6 +50,7 @@
             justify-content: center;
             align-items: center;
         }
+
         .about-img-custom img {
             width: 100%;
             height: 100%;
@@ -65,6 +68,7 @@
             padding-bottom: 5px;
             font-weight: 600;
         }
+
         .cat-title {
             font-size: 0.9rem;
             color: #fff;
@@ -76,13 +80,18 @@
             margin-bottom: 15px;
             margin-top: 10px;
         }
-        .cat-title.cyan-theme { border-left-color: #00E5FF; }
+
+        .cat-title.cyan-theme {
+            border-left-color: #00E5FF;
+        }
+
         .pills-container {
             display: flex;
             flex-wrap: wrap;
             gap: 12px;
             margin-bottom: 25px;
         }
+
         .skill-pill {
             padding: 8px 18px;
             border: 1px solid #ffbd39;
@@ -96,6 +105,7 @@
             cursor: default;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         .skill-pill.cyan {
             border-color: #00E5FF;
             background: rgba(0, 229, 255, 0.05);
@@ -110,6 +120,7 @@
                 border-color: #ffbd39;
                 z-index: 10;
             }
+
             .skill-pill.cyan:hover {
                 background-color: #00E5FF;
                 color: #000;
@@ -117,6 +128,7 @@
                 box-shadow: 0 8px 15px rgba(0, 229, 255, 0.4);
                 border-color: #00E5FF;
             }
+
             .project-wrap:hover .img img {
                 transform: scale(1.05);
                 transition: 0.3s ease;
@@ -130,7 +142,7 @@
 
         .project-wrap .img {
             display: block;
-            height: 280px; 
+            height: 280px;
             width: 100%;
             border-radius: 5px;
             overflow: hidden;
@@ -140,12 +152,12 @@
         .project-wrap .img img {
             width: 100%;
             height: 100%;
-            object-fit: contain; 
+            object-fit: contain;
             transition: 0.1s all ease;
         }
 
         .project-wrap .text {
-            padding: 20px 0; 
+            padding: 20px 0;
         }
 
         .project-wrap .text h3 a {
@@ -186,7 +198,7 @@
 
         .hero-img-col {
             position: absolute;
-            top: 10%;
+            top: 0%;
             right: 0;
             bottom: 0;
             width: 45%;
@@ -219,7 +231,7 @@
 
             .hero-img-col {
                 width: 100%;
-                height: 100%;
+                height: 75%;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -230,8 +242,9 @@
             }
 
             .hero-img-col .overlay {
-                display: block; /* Dark overlay wapis lagaya taaki text dikhe */
-                background: rgba(0, 0, 0, 0.4); 
+                display: block;
+                /* Dark overlay wapis lagaya taaki text dikhe */
+                background: rgba(0, 0, 0, 0.4);
             }
 
             .hero-text-col {
@@ -258,8 +271,10 @@
                 color: #fff;
                 font-weight: 800;
             }
-            
-            .hero-text-col h1 span { color: #ffbd39; }
+
+            .hero-text-col h1 span {
+                color: #ffbd39;
+            }
 
             .hero-text-col h2 {
                 font-size: 20px;
@@ -343,7 +358,8 @@
                             <ul class="about-info mt-4 px-md-0 px-2">
                                 <li class="d-flex"><span>Name:</span> <span>Mayank</span></li>
                                 <li class="d-flex"><span>Role:</span> <span>UI/UX Designer & Data Scientist</span></li>
-                                <li class="d-flex"><span>Education:</span> <span>Bachelor of Technology (CSE)</span></li>
+                                <li class="d-flex"><span>Education:</span> <span>Bachelor of Technology (CSE)</span>
+                                </li>
                                 <li class="d-flex"><span>Language:</span> <span>English, Hindi, Punjabi</span></li>
                                 <li class="d-flex"><span>Location:</span> <span>Jalandhar, India</span></li>
                             </ul>
@@ -356,8 +372,10 @@
                                 <span class="number" data-number="10">0</span> <span>+ Projects completed</span>
                             </p>
                             <p>
-                                <a href="https://www.linkedin.com/in/mayank-83b657365" class="btn btn-primary py-3 px-3">LinkedIn</a>
-                                <a href="https://github.com/Mayank221610" class="btn btn-white btn-outline-white py-3 px-3">GitHub</a>
+                                <a href="https://www.linkedin.com/in/mayank-83b657365"
+                                    class="btn btn-primary py-3 px-3">LinkedIn</a>
+                                <a href="https://github.com/Mayank221610"
+                                    class="btn btn-white btn-outline-white py-3 px-3">GitHub</a>
                             </p>
                         </div>
                     </div>
@@ -385,7 +403,7 @@
                             <span class="skill-pill">Machine Learning</span>
                             <span class="skill-pill">Deep Learning</span>
                             <span class="skill-pill">Natural Language Processing (NLP)</span>
-							<span class="skill-pill">Model Training</span>
+                            <span class="skill-pill">Model Training</span>
                             <span class="skill-pill">Model Evaluation</span>
                             <span class="skill-pill">Data Preprocessing</span>
                         </div>
@@ -400,10 +418,10 @@
                             <span class="skill-pill">NumPy</span>
                             <span class="skill-pill">EDA</span>
                             <span class="skill-pill">Power BI</span>
-							<span class="skill-pill">Data Cleaning</span>
+                            <span class="skill-pill">Data Cleaning</span>
                             <span class="skill-pill">Matplotlib</span>
                             <span class="skill-pill">Plotly</span>
-							<span class="skill-pill">Seaborn</span>
+                            <span class="skill-pill">Seaborn</span>
                         </div>
                     </div>
                 </div>
@@ -416,7 +434,7 @@
                             <span class="skill-pill cyan">Photoshop</span>
                             <span class="skill-pill cyan">Wireframing</span>
                             <span class="skill-pill cyan">Prototyping</span>
-							<span class="skill-pill cyan">User Interface Design</span>
+                            <span class="skill-pill cyan">User Interface Design</span>
                             <span class="skill-pill cyan">Layout & Visual Design</span>
                             <span class="skill-pill cyan">Typography</span>
                             <span class="skill-pill cyan">Color Theory</span>
@@ -424,7 +442,7 @@
                     </div>
                 </div>
 
-				 <div class="col-md-6 ftco-animate">
+                <div class="col-md-6 ftco-animate">
                     <div class="skill-category">
                         <div class="cat-title">Web Technologies</div>
                         <div class="pills-container">
@@ -448,7 +466,7 @@
                     </div>
                 </div>
 
-				<div class="col-md-6 ftco-animate">
+                <div class="col-md-6 ftco-animate">
                     <div class="skill-category">
                         <div class="cat-title">Other</div>
                         <div class="pills-container">
@@ -482,7 +500,8 @@
                         <span class="position">Start Spark Private Limited</span>
                         <p class="mt-4">
                         <ul>
-                            <li>Designed mobile + web UI screens using Figma, achieving <b>90%</b> design consistency.</li>
+                            <li>Designed mobile + web UI screens using Figma, achieving <b>90%</b> design consistency.
+                            </li>
                             <li>Created branding elements boosting visual engagement by 85%.</li>
                             <li>Improved user flow, reducing user confusion by 40%.</li>
                             <li>Collaborated with team for 90% on-time delivery.</li>
@@ -522,7 +541,7 @@
             <div class="row justify-content-center pb-5">
                 <div class="col-md-12 heading-section text-center ftco-animate">
                     <h1 class="big big-2">Designs</h1>
-                    <h2 class="mb-4">Graphic Design Portfolio</h2>
+                    <h2 class="mb-4">Graphic Design</h2>
                     <p>Posters, Logos, and Creative Designs.</p>
                 </div>
             </div>
@@ -604,7 +623,8 @@
                             <img src="images/proj_2.jpg" class="img-fluid" alt="Marks Predictor">
                         </a>
                         <div class="text">
-                            <h3><a href="https://github.com/Mayank221610/Student_Marks_Predictor.git">Marks Predictor</a></h3>
+                            <h3><a href="https://github.com/Mayank221610/Student_Marks_Predictor.git">Marks
+                                    Predictor</a></h3>
                             <span>Machine Learning</span>
                         </div>
                     </div>
@@ -626,18 +646,22 @@
                             <img src="images/proj_4.jpg" class="img-fluid" alt="Crime Analysis">
                         </a>
                         <div class="text">
-                            <h3><a href="https://github.com/Mayank221610/Crime-Analysis-Dashboard.git">Crime Analysis Dashboard</a></h3>
+                            <h3><a href="https://github.com/Mayank221610/Crime-Analysis-Dashboard.git">Crime Analysis
+                                    Dashboard</a></h3>
                             <span>Python & Streamlit Dashboard</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="project-wrap text-center">
-                        <a href="https://www.figma.com/design/SCUBFbYGTq3XA3gHYKnUZJ/MG-Trends?node-id=2088-27&p=f" class="img">
+                        <a href="https://www.figma.com/design/SCUBFbYGTq3XA3gHYKnUZJ/MG-Trends?node-id=2088-27&p=f"
+                            class="img">
                             <img src="images/proj_5.jpg" class="img-fluid" alt="MG Trends">
                         </a>
                         <div class="text">
-                            <h3><a href="https://www.figma.com/design/SCUBFbYGTq3XA3gHYKnUZJ/MG-Trends?node-id=2088-27&p=f">MG Trends App</a></h3>
+                            <h3><a
+                                    href="https://www.figma.com/design/SCUBFbYGTq3XA3gHYKnUZJ/MG-Trends?node-id=2088-27&p=f">MG
+                                    Trends App</a></h3>
                             <span>Figma Mobile App Design</span>
                         </div>
                     </div>
@@ -645,11 +669,14 @@
 
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="project-wrap text-center">
-                        <a href="https://www.figma.com/design/hg0RmGfUYy5PWWERMxO4lt/Myhrclock?node-id=1-1261&t=uyKwLNIwZr85U1cQ-1" class="img">
+                        <a href="https://www.figma.com/design/hg0RmGfUYy5PWWERMxO4lt/Myhrclock?node-id=1-1261&t=uyKwLNIwZr85U1cQ-1"
+                            class="img">
                             <img src="images/proj_6.png" class="img-fluid" alt="Myhrclock">
                         </a>
                         <div class="text">
-                            <h3><a href="https://www.figma.com/design/hg0RmGfUYy5PWWERMxO4lt/Myhrclock?node-id=1-1261&t=uyKwLNIwZr85U1cQ-1">Myhrclock</a></h3>
+                            <h3><a
+                                    href="https://www.figma.com/design/hg0RmGfUYy5PWWERMxO4lt/Myhrclock?node-id=1-1261&t=uyKwLNIwZr85U1cQ-1">Myhrclock</a>
+                            </h3>
                             <span>Figma Mobile App Design</span>
                         </div>
                     </div>
@@ -707,39 +734,49 @@
                         <div class="icon d-flex align-items-center justify-content-center">
                             <span class="icon-globe"></span>
                         </div>
-                        <h3 class="mb-4">Social</h3>
-                        <p><a href="https://www.linkedin.com/in/mayank-83b657365">LinkedIn Profile</a></p>
+                        <h3 class="mb-4">Resume</h3>
+                        <p><a
+                                href="https://drive.google.com/file/d/1GbgP3Frjgkoy_HUM6WsbmPjAKhSC0Q4x/view?usp=drive_link">Download
+                                resume</a></p>
+                    </div>
+                </div>
+                <div class="container">
+                    <br>
+                    <br>
+                    <div class="row justify-content-center"
+                        style="background-color: #000; padding: 50px 0; width: 100%; margin: 0;">
+
+                        <div class="col-md-12 text-center">
+                            <h2 style="color: #fff; margin-bottom: 30px;">Social Links</h2>
+
+                            <div class="d-flex justify-content-center align-items-center">
+
+                                <a href="https://www.linkedin.com/in/mayank-83b657365" target="_blank"
+                                    style="margin: 0 10px; width: 50px; height: 50px; background: #222; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #f1c40f; font-size: 24px; text-decoration: none;">
+                                    <span class="icon-linkedin"></span>
+                                </a>
+
+                                <a href="https://www.instagram.com/itz_mayank_16/" target="_blank"
+                                    style="margin: 0 10px; width: 50px; height: 50px; background: #222; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #f1c40f; font-size: 24px; text-decoration: none;">
+                                    <span class="icon-instagram"></span>
+                                </a>
+
+                                <a href="https://github.com/Mayank221610" target="_blank"
+                                    style="margin: 0 10px; width: 50px; height: 50px; background: #222; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #f1c40f; font-size: 24px; text-decoration: none;">
+                                    <span class="icon-github"></span>
+                                </a>
+
+                                <a href="https://wa.me/918427140354" target="_blank"
+                                    style="margin: 0 10px; width: 50px; height: 50px; background: #222; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #f1c40f; font-size: 24px; text-decoration: none;">
+                                    <span class="icon-whatsapp"></span>
+                                </a>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-
-            <div class="row no-gutters block-9">
-                <div class="col-md-6 order-md-last d-flex">
-                    <form action="#" class="bg-light p-4 p-md-5 contact-form">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Email">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="7" class="form-control"
-                                placeholder="Message"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-                        </div>
-                    </form>
-                </div>
-
-                <div class="col-md-6 d-flex">
-                    <div class="img" style="background-image: url(images/Mayank.jpg);"></div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <footer class="ftco-footer ftco-section">
