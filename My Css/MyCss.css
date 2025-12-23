@@ -1,0 +1,456 @@
+ /* ===============================
+   ABOUT → SKILLS (Reduce gap)
+================================ */
+ #about-section {
+     padding-bottom: 10px !important;
+     margin-bottom: 0 !important;
+ }
+
+ #skills-section {
+     padding-top: 10px !important;
+ }
+
+ /* About ke andar jo extra padding hai */
+ #about-section .pb-5 {
+     padding-bottom: 10px !important;
+ }
+
+
+ /* ===============================
+SKILLS → RESUME (Reduce gap)
+================================ */
+ #skills-section {
+     padding-bottom: 15px !important;
+ }
+
+ #resume-section {
+     padding-top: 15px !important;
+ }
+
+ /* Skills heading ke niche jo pb-5 hai */
+ #skills-section .pb-5 {
+     padding-bottom: 15px !important;
+ }
+
+ @media (max-width: 768px) {
+     #about-section {
+         padding-bottom: 8px !important;
+     }
+
+     #skills-section {
+         padding-top: 8px !important;
+         padding-bottom: 10px !important;
+     }
+
+ }
+
+ /* ===============================
+   RESUME SECTION LAYOUT
+================================ */
+
+ /* Equal height columns */
+ #resume-section .row {
+     display: flex;
+     align-items: stretch;
+
+     /* ↓ horizontal gap kam karne ke liye */
+     margin-left: -8px;
+     margin-right: -8px;
+ }
+
+ /* Column padding reduce (gap kam) */
+ #resume-section .col-md-6 {
+     padding-left: 8px;
+     padding-right: 8px;
+ }
+
+ /* Stretch Internship card (left) */
+ #resume-section .col-md-6:first-child .resume-wrap {
+     height: 85%;
+ }
+
+ /* Resume cards spacing (Education cards ke beech) */
+ #resume-section .resume-wrap {
+     margin-bottom: 14px;
+     /* pehle 20px tha, ab tight */
+ }
+
+ /* ===============================
+                MOBILE FIX
+        ================================ */
+ @media (max-width: 768px) {
+     #resume-section .row {
+         display: block;
+         margin-left: 0;
+         margin-right: 0;
+     }
+
+     #resume-section .col-md-6 {
+         padding-left: 15px;
+         padding-right: 15px;
+     }
+
+     #resume-section .resume-wrap {
+         height: auto;
+         margin-bottom: 15px;
+     }
+ }
+
+ /* ===============================
+   RESUME → GRAPHIC DESIGN GAP
+================================ */
+
+/* Desktop */
+#resume-section {
+    padding-bottom: 20px !important;
+}
+
+#design-section {
+    padding-top: 20px !important;
+}
+
+/* Download CV ke neeche ka extra gap */
+#resume-section .row.justify-content-center.mt-5 {
+    margin-bottom: 20px !important;
+}
+
+
+/* ===============================
+   GRAPHIC DESIGN HEADING SPACING
+================================ */
+
+#design-section .heading-section {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+#design-section .heading-section p {
+    margin-bottom: 5px !important;
+}
+
+
+/* ===============================
+   HEADING → CARDS GAP
+================================ */
+
+#design-section .row.justify-content-center {
+    margin-top: 0 !important;
+}
+
+
+/* ===============================
+   MAKE 3 IMAGES SAME SIZE
+================================ */
+
+#design-section .project-wrap .img {
+    height: 240px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#design-section .project-wrap .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ===============================
+   MOBILE FIX (≤768px)
+   SAME RHYTHM AS ABOUT → SKILLS
+================================ */
+
+@media (max-width: 768px) {
+
+    /* Resume → Design spacing */
+    #resume-section {
+        padding-bottom: 8px !important;
+    }
+
+    #design-section {
+        padding-top: 8px !important;
+    }
+
+    /* Heading spacing */
+    #design-section .heading-section {
+        margin-top: 8px !important;
+        margin-bottom: 8px !important;
+    }
+
+    #design-section .heading-section p {
+        margin-bottom: 5px !important;
+    }
+
+    /* Heading → Cards */
+    #design-section .row.justify-content-center {
+        margin-top: 8px !important;
+    }
+
+    /* Card image size */
+    #design-section .project-wrap .img {
+        height: 200px;
+    }
+}
+
+/* ===============================
+   GRAPHIC DESIGN → NEXT SECTION GAP
+================================ */
+
+/* Cards ke neeche ka extra gap */
+#design-section .project-wrap {
+    margin-bottom: 15px !important;
+}
+
+/* Graphic Design section ka bottom padding kam */
+#design-section {
+    padding-bottom: 20px !important;
+}
+
+
+/* ===============================
+   PROJECTS SECTION – GAP FIX
+================================ */
+
+/* Projects section ka overall top padding kam */
+#dev-section {
+    padding-top: 15px !important;
+}
+
+/* Heading (Projects) ke neeche ka gap kam */
+#dev-section .heading-section {
+    margin-bottom: 10px !important;
+}
+
+/* Subtitle ke neeche ka gap aur kam */
+#dev-section .heading-section p {
+    margin-bottom: 6px !important;
+}
+
+/* Heading ke baad cards row ka gap kam */
+#dev-section .row.d-flex {
+    margin-top: 8px !important;
+}
+
+
+/* ===============================
+   PROJECT CARDS SPACING
+================================ */
+
+/* Har project card ke neeche ka gap control */
+#dev-section .project-wrap {
+    margin-bottom: 15px !important;
+}
+
+/* Project image size consistent */
+#dev-section .project-wrap .img {
+    height: 230px;
+    overflow: hidden;
+}
+
+#dev-section .project-wrap .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ===============================
+   MOBILE FIX (≤768px)
+================================ */
+@media (max-width: 768px) {
+
+    #dev-section {
+        padding-top: 10px !important;
+    }
+
+    #dev-section .heading-section {
+        margin-bottom: 8px !important;
+    }
+
+    #dev-section .row.d-flex {
+        margin-top: 6px !important;
+    }
+
+    #dev-section .project-wrap {
+        margin-bottom: 12px !important;
+    }
+
+    #dev-section .project-wrap .img {
+        height: 200px;
+    }
+}
+/* ===============================
+   PROJECTS → CONTACT GAP FIX
+================================ */
+
+/* Projects section ke bottom ka extra gap kam */
+#dev-section {
+    padding-bottom: 20px !important;
+}
+
+/* View GitHub button ke neeche ka gap kam */
+#dev-section .row.justify-content-center.mt-4 {
+    margin-bottom: 15px !important;
+}
+
+
+/* ===============================
+   CONTACT SECTION SPACING
+================================ */
+
+/* Contact section ka top padding kam */
+#contact-section {
+    padding-top: 20px !important;
+}
+
+/* Contact heading ke neeche ka gap kam */
+#contact-section .heading-section {
+    margin-bottom: 15px !important;
+}
+
+/* Subtitle ke neeche ka gap kam */
+#contact-section .heading-section p {
+    margin-bottom: 8px !important;
+}
+
+
+/* ===============================
+   MOBILE FIX (≤768px)
+================================ */
+@media (max-width: 768px) {
+
+    #dev-section {
+        padding-bottom: 15px !important;
+    }
+
+    #contact-section {
+        padding-top: 15px !important;
+    }
+
+    #contact-section .heading-section {
+        margin-bottom: 10px !important;
+    }
+}
+/* ===============================
+   CONTACT HEADING → CARDS GAP
+================================ */
+
+/* Contact section ka overall top padding kam */
+#contact-section {
+    padding-top: 15px !important;
+}
+
+/* Heading ke neeche ka gap kam */
+#contact-section .heading-section {
+    margin-bottom: 10px !important;
+}
+
+/* Subtitle ke neeche ka gap aur kam */
+#contact-section .heading-section p {
+    margin-bottom: 6px !important;
+}
+
+/* Contact cards row ko heading ke paas lao */
+#contact-section .contact-info {
+    margin-top: 10px !important;
+}
+
+
+/* ===============================
+   MOBILE FIX (≤768px)
+================================ */
+@media (max-width: 768px) {
+
+    #contact-section {
+        padding-top: 10px !important;
+    }
+
+    #contact-section .heading-section {
+        margin-bottom: 8px !important;
+    }
+
+    #contact-section .contact-info {
+        margin-top: 8px !important;
+    }
+}
+/* ===============================
+   CONTACT CARDS → SOCIAL LINKS GAP
+================================ */
+
+/* Contact info (icons + text) ke neeche gap kam */
+#contact-section .contact-info {
+    margin-bottom: 40px !important;
+}
+
+/* Social Links heading ko upar lao */
+#contact-section h2 {
+    margin-top: 100px !important;
+    margin-bottom: 20px !important;
+}
+
+/* Social icons container ka top gap kam */
+#contact-section .d-flex.justify-content-center {
+    margin-top: 10px !important;
+}
+
+
+/* ===============================
+   MOBILE FIX (≤768px)
+================================ */
+@media (max-width: 768px) {
+
+    #contact-section .contact-info {
+        margin-bottom: 15px !important;
+    }
+
+    #contact-section h2 {
+        margin-top: 50px !important;
+        margin-bottom: 15px !important;
+    }
+
+    #contact-section .d-flex.justify-content-center {
+        margin-top: 8px !important;
+    }
+}
+/* ===============================
+   REMOVE BIG EMPTY SPACE (SOCIAL → COPYRIGHT)
+================================ */
+
+/* Social Links section ka extra padding hatao */
+#contact-section {
+    padding-bottom: 10px !important;
+}
+
+/* Social links wrapper ka bottom gap */
+#contact-section .row.justify-content-center {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Icons ke neeche ka khaali space */
+#contact-section .d-flex.justify-content-center {
+    margin-bottom: 50px !important;
+    padding-bottom: 0 !important;
+}
+
+/* Copyright ke upar & neeche ka space kam */
+#contact-section p {
+    margin-top: 10px !important;
+    margin-bottom: 5px !important;
+}
+
+/* Footer ka default padding kill */
+.ftco-footer,
+footer {
+    padding-top: 20px !important;
+    padding-bottom: 10px !important;
+    margin-top: 0 !important;
+}
+
+/* EXTRA SAFETY: koi bhi last-child gap */
+#contact-section *:last-child {
+    margin-bottom: 0 !important;
+}
