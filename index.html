@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./My Css/MyCss.css">
     <style>
-
         /* --- Force Projects to be Visible --- */
         .project-wrap,
         .img,
@@ -272,6 +271,59 @@
                 margin-top: 10px;
             }
         }
+
+        @media (max-width: 768px) {
+            .hero-wrap {
+                padding-bottom: 20px !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #about-section {
+                padding-top: 0px !important;
+                margin-top: 0 !important;
+            }
+        }
+
+        /* ===============================
+   ABOUT SECTION – FINAL ORDER FIX
+================================ */
+        @media (max-width: 768px) {
+
+            /* Row ko column banao */
+            #about-section .row.d-flex {
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* 🔥 1️⃣ HEADING FIRST */
+            #about-section .heading-section {
+                order: 1;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            /* 🔥 2️⃣ IMAGE SECOND */
+            #about-section .col-lg-5 {
+                order: 2;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+
+            #about-section .about-img-custom img {
+                width: 220px;
+                height: 220px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            /* 🔥 3️⃣ TEXT LAST */
+            #about-section .about-text {
+                order: 3;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
@@ -323,6 +375,8 @@
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
         <div class="container">
             <div class="row d-flex">
+
+                <!-- IMAGE COLUMN -->
                 <div class="col-md-6 col-lg-5 d-flex">
                     <div class="img-about img d-flex align-items-stretch">
                         <div class="overlay"></div>
@@ -332,18 +386,31 @@
                     </div>
                 </div>
 
+                <!-- CONTENT COLUMN -->
                 <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
                     <div class="row justify-content-start pb-3">
+
+                        <!-- HEADING -->
                         <div class="col-md-12 heading-section ftco-animate">
                             <h1 class="big">About</h1>
                             <h2 class="mb-4">About Me</h2>
-                            <p>I am a B.Tech Computer Science student with hands-on experience in Machine Learning, Data
-                                Science, and UI/UX Design. I have worked on real-world ML and data projects involving
+                        </div>
+
+                        <!-- TEXT + INFO -->
+                        <div class="col-md-12 ftco-animate about-text">
+                            <p>
+                                I am a B.Tech Computer Science student with hands-on experience in Machine Learning,
+                                Data Science, and UI/UX Design. I have worked on real-world ML and data projects
+                                involving
                                 data preprocessing, model building, evaluation, and interactive dashboards using Python
-                                and Streamlit.</p>
-                            <p>Alongside this, I design clean, user-focused interfaces using Figma and Photoshop,
+                                and Streamlit.
+                            </p>
+
+                            <p>
+                                Alongside this, I design clean, user-focused interfaces using Figma and Photoshop,
                                 ensuring both functionality and usability. I enjoy solving real problems by combining
-                                data-driven thinking with strong design principles.</p>
+                                data-driven thinking with strong design principles.
+                            </p>
 
                             <ul class="about-info mt-4 px-md-0 px-2">
                                 <li class="d-flex"><span>Name:</span> <span>Mayank</span></li>
@@ -354,8 +421,10 @@
                                 <li class="d-flex"><span>Location:</span> <span>Jalandhar, India</span></li>
                             </ul>
                         </div>
+
                     </div>
 
+                    <!-- COUNTER + BUTTONS -->
                     <div class="counter-wrap ftco-animate d-flex mt-md-3">
                         <div class="text">
                             <p class="mb-4">
@@ -369,10 +438,12 @@
                             </p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
+
 
     <section class="ftco-section" id="skills-section">
         <div class="container">
@@ -495,6 +566,8 @@
                             <li>Created branding elements boosting visual engagement by 85%.</li>
                             <li>Improved user flow, reducing user confusion by 40%.</li>
                             <li>Collaborated with team for 90% on-time delivery.</li>
+                            <li>Applied UX principles (typography, spacing, color hierarchy), increasing interface clarity by 45%.</li>
+                            <li>Conducted user research and usability testing, improving user satisfaction by 35%.</li>
                         </ul>
                         </p>
                     </div>
@@ -732,37 +805,37 @@
                 </div>
                 <div class="container">
 
-                        <div class="col-md-12 text-center">
-                            <h2 style="color: #fff; margin-bottom: 30px;">Social Links</h2>
+                    <div class="col-md-12 text-center">
+                        <h2 style="color: #fff; margin-bottom: 30px;">Social Links</h2>
 
-                            <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-flex justify-content-center align-items-center">
 
-                                <a href="https://www.linkedin.com/in/mayank-83b657365" target="_blank"
-                                    style="margin: 0 10px; width: 50px; height: 50px; background: #222; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #f1c40f; font-size: 24px; text-decoration: none;">
-                                    <span class="icon-linkedin"></span>
-                                </a>
+                            <a href="https://www.linkedin.com/in/mayank-83b657365" target="_blank"
+                                style="margin: 0 10px; width: 50px; height: 50px; background: #222; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #f1c40f; font-size: 24px; text-decoration: none;">
+                                <span class="icon-linkedin"></span>
+                            </a>
 
-                                <a href="https://www.instagram.com/itz_mayank_16/" target="_blank"
-                                    style="margin: 0 10px; width: 50px; height: 50px; background: #222; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #f1c40f; font-size: 24px; text-decoration: none;">
-                                    <span class="icon-instagram"></span>
-                                </a>
+                            <a href="https://www.instagram.com/itz_mayank_16/" target="_blank"
+                                style="margin: 0 10px; width: 50px; height: 50px; background: #222; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #f1c40f; font-size: 24px; text-decoration: none;">
+                                <span class="icon-instagram"></span>
+                            </a>
 
-                                <a href="https://github.com/Mayank221610" target="_blank"
-                                    style="margin: 0 10px; width: 50px; height: 50px; background: #222; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #f1c40f; font-size: 24px; text-decoration: none;">
-                                    <span class="icon-github"></span>
-                                </a>
+                            <a href="https://github.com/Mayank221610" target="_blank"
+                                style="margin: 0 10px; width: 50px; height: 50px; background: #222; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #f1c40f; font-size: 24px; text-decoration: none;">
+                                <span class="icon-github"></span>
+                            </a>
 
-                                <a href="https://wa.me/918427140354" target="_blank"
-                                    style="margin: 0 10px; width: 50px; height: 50px; background: #222; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #f1c40f; font-size: 24px; text-decoration: none;">
-                                    <span class="icon-whatsapp"></span>
-                                </a>
+                            <a href="https://wa.me/918427140354" target="_blank"
+                                style="margin: 0 10px; width: 50px; height: 50px; background: #222; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #f1c40f; font-size: 24px; text-decoration: none;">
+                                <span class="icon-whatsapp"></span>
+                            </a>
 
-                            </div>
                         </div>
-
                     </div>
+
                 </div>
             </div>
+        </div>
     </section>
 
     <footer class="ftco-footer ftco-section">
